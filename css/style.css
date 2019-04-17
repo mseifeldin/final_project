@@ -285,10 +285,10 @@ div.flex-container p{
 /*QR code in print*/
 @media print {
        body:after{
-            content:url(http://chart.googleapis.com/chart?
-                  cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=<<URL>>)
+      content: url(https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=https://mseifeldin.github.io/final_project/&choe=UTF-8);
             }
 }
+
 
 
 
