@@ -4,6 +4,7 @@ body {
 html,body{
   height: 100%;
 }
+
 header {
 
   background-image: url("../images/graffiti_banner.jpg");
@@ -11,6 +12,10 @@ header {
   height: 300px;
   width: 100vw;
   margin-top: 0;
+}
+
+footer{
+  margin: 25px 25px;
 }
 h1 {
     font-size: 25px;
@@ -65,7 +70,7 @@ nav li a {
 }
 #navbar{z-index: 1;
 }
-.active {
+a.active{
   background-color: #e1ae46;
 }
 /* Change the link color to #111 (black) on hover */
@@ -162,7 +167,10 @@ div.flex-container p{
 
 }
 
-
+/*Hide QR code online*/
+.qrcode img{
+    display: none;
+       }
 
 
 
@@ -258,7 +266,7 @@ div.flex-container p{
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  /*background-color: #bbb;*/
   color: black;
   z-index: 2;
 }
@@ -284,16 +292,87 @@ div.flex-container p{
 
 /*QR code in print*/
 @media print {
-       body:after{
-      content: url(https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=https://mseifeldin.github.io/final_project/&choe=UTF-8);
-            }
+       .qrcode img{
+      display: block;  
+       }
 }
 
+/*Accordion*/
 
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 70vw;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: block;
+  font-size: 20pt;
+}
 
+.active, .accordion:hover {
+  background-color: #ccc;
+}
 
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
 
+.accordion.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/*Filter List*/
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 70vw; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+  margin-left: 15vw;
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  margin-left: 35vw;
+  width: 30vw;
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
 
 
 

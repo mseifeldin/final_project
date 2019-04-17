@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite">
   </head>
-  <body>
+  <body onload="typeWriter()">
     <a href="#main" class = "offpage">Skip to Content</a>
     <header>
     
@@ -27,7 +27,9 @@
         <h3>About</h3>
         <div class = "flex-container">
         <img class = flex-item src="images/headshot.png" alt="headshot of the author">
-        <p class = "flex-item">I grew up in a bit of an odd home. My parents are immigrants from Egypt, and although I ate a lot of Egyptian food growing up, my mother also liked to experiment with food from other cultures. I've been meaning to get her recipes down and organized in one place for a while, so here they are!</p>   
+        <div class = "flex-item">
+        <p id = 'typewrite'></p>
+      </div>   
       </div>
     </main>
     <footer>
