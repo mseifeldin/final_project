@@ -159,73 +159,11 @@ div.flex-container p{
        }
 
 
-
-@media only screen and (min-width: 600px) {
-  div.flex-container img{
-    width: 150px;
-    height: 150px;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  h2,h3{
-  font-size: 36px;
-  }
-  .offpage:focus { 
-   left: 500px;
-   top: 5px;
-   margin: 5px;
-  }
-  img.galleryitem{
-  width: 200px;
-
-}
-}
-
-
-@media only screen and (min-width: 780px) {
-  img.galleryitem{
-  width: 300px;
-  }
-  .wrapper {
-  width: 100vw;
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-column-gap: 0px;
-  grid-row-gap: 75px;
-  }
-
-  h1 {
-    font-size: 48px;
-    padding: 50px 0px 0px 0px;
-  }
-  h2,h3{
-  width: 50vw;
-  font-size: 40px;
-  }
-  div.flex-container img{
-    width: 200px;
-    height: 200px;
-  }
-  nav ul{
-  /*position: fixed;*/
-  top: 0;
-  width: 100%;
-  }
-  .offpage:focus { 
-   left: 5px;
-   top: 300px;
-   color: white;
-   font-weight: bold;
-  }
-}
-
-
 /*Flip Cards*/
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   perspective: 1000px;
 }
 
@@ -261,6 +199,7 @@ div.flex-container p{
   transform: rotateY(180deg);
   z-index: 1;
 }
+
 
 /*Sticky Nav Bar*/
 
@@ -326,11 +265,11 @@ div.flex-container p{
 
 /*Filter List*/
 #myInput {
-  width: 70vw; 
+  width: 80vw; 
   font-size: 16px; 
-  padding: 12px 20px 12px 40px; 
+  padding: 6px 10px 6px 20px; 
   border: 1px solid #ddd; 
-  margin-bottom: 12px; 
+  margin-bottom: 6px; 
   margin-left: 15vw;
 }
 
@@ -346,9 +285,9 @@ div.flex-container p{
   margin-left: 35vw;
   width: 30vw;
   background-color: #f6f6f6; 
-  padding: 12px; 
+  padding: 6px; 
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   color: black;
   display: block;
 }
@@ -358,7 +297,115 @@ div.flex-container p{
   color: #76a912;
 }
 
+@media only screen and (min-width: 600px) {
+  div.flex-container img{
+    width: 150px;
+    height: 150px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2,h3{
+  font-size: 36px;
+  }
+  .offpage:focus { 
+   left: 500px;
+   top: 5px;
+   margin: 5px;
+  }
+  img.galleryitem{
+  width: 200px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+#myInput {
+  width: 80vw; 
+  font-size: 14px; 
+  padding: 9px 15px 9px 30px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 9px; 
+  margin-left: 15vw;
+}
+#myUL li a {
+  border: 1px solid #ddd; 
+  margin-top: -1px; 
+  margin-left: 35vw;
+  width: 30vw;
+  background-color: #f6f6f6; 
+  padding: 9px; 
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
+}
+}
 
 
+@media only screen and (min-width: 780px) {
+  img.galleryitem{
+  width: 300px;
+  }
+  .wrapper {
+  width: 100vw;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-column-gap: 0px;
+  grid-row-gap: 75px;
+  }
+
+  h1 {
+    font-size: 48px;
+    padding: 50px 0px 0px 0px;
+  }
+  h2,h3{
+  width: 50vw;
+  font-size: 40px;
+  }
+  div.flex-container img{
+    width: 200px;
+    height: 200px;
+  }
+  nav ul{
+  /*position: fixed;*/
+  top: 0;
+  width: 100%;
+  }
+  .offpage:focus { 
+   left: 5px;
+   top: 300px;
+   color: white;
+   font-weight: bold;
+  }
+  .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+#myInput {
+  width: 70vw; 
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+  margin-left: 15vw;
+}
+#myUL li a {
+  border: 1px solid #ddd; 
+  margin-top: -1px; 
+  margin-left: 35vw;
+  width: 30vw;
+  background-color: #f6f6f6; 
+  padding: 12px; 
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+}
 
 
