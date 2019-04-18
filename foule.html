@@ -28,8 +28,9 @@
     <main id = "main">
         <h3>Foule<i class="fas fa-seedling"></i><i class="fas fa-seedling"></i></h3>
             <p>Foule (fava beans) is a very traditional Egyptian dish, normally eaten with thick pita bread for breakfast.</p>
-            <img src="images/foule.jpg" alt="image of foule, cooked fava beans">
-
+            <img class = 'recipepage' src="images/foule.jpg" alt="image of foule, cooked fava beans">
+                <button class="accordion">Ingredients</button>
+            <div class="panel">
             <ul>
 
             	<li>2 C dry fava beans</li>
@@ -40,7 +41,9 @@
                 <li>olive oil to taste</li>
 
             </ul>
-
+            </div>
+            <button class="accordion">Instructions</button>
+            <div class="panel">
             <p>
                 In a slow cooker, Submerge the beans by an inch to two of water.
                 Cover and turn cooker on high overnight (about 8-12 hrs).
@@ -48,10 +51,14 @@
                 If done, add salt, vinegar, lime juice.
                 When you serve it up add the cumin, adjust lime juice and add oil.
             </p>
+        </div>
     </main>
     <footer>
         &copy; Maryam Seifeldin. All rights reserved
   </footer>
+  <div class='qrcode'>
+    <img src="http://api.qrserver.com/v1/create-qr-code/?data=URL_INFO_HERE&size=100x100" alt="qr code" />
+  </div>
   <script  src="js/index.js"></script>
   </body>
 </html>
