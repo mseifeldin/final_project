@@ -68,7 +68,7 @@ nav li a {
 #navbar{z-index: 1;
 }
 a.active{
-  background-color: #e1ae46;
+  background-color: #047203;
 }
 /* Change the link color to #111 (black) on hover */
 li a:hover {
@@ -255,7 +255,7 @@ div.flex-container p{
 }
 
 .flip-card-back {
-  background-color: #e1ae46;
+  background-color: #047203;
   color: white;
   transform: rotateY(180deg);
   z-index: 1;
