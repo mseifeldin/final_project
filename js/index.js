@@ -12,7 +12,7 @@ function myFunction() {
 
 // Typewriter
 var i = 0;
-var txt = 'I grew up in a bit of an odd home. My parents are immigrants from Egypt, and although I ate a lot of Egyptian food growing up, my mother also liked to experiment with food from other cultures. I\'ve been meaning to get her recipes down and organized in one place for a while, so here they are!'; /* The text */
+var txt = 'I grew up in a bit of an odd home. My parents are immigrants from Egypt, and although I ate a lot of Egyptian food growing up, my mother also liked to experiment with food from other cultures. I\'ve been meaning to get her recipes down and organized in one place for a while, so here they are!';
 var speed = 50; 
 
 function typeWriter() {
@@ -30,11 +30,9 @@ var j;
 
 for (j = 0; j < acc.length; j++) {
   acc[j].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
+
     this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
