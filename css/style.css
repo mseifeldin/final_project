@@ -35,7 +35,7 @@ h2,h3{
 }
 .name{
   margin: 25px 25px 25px 25px;
-  font-size: 25px;
+  font-size: 15px;
   font-weight: bold;
 }
 ul {
@@ -405,6 +405,11 @@ div.flex-container p{
   font-size: 18px;
   color: black;
   display: block;
+}
+.name{
+  margin: 25px 25px 25px 25px;
+  font-size: 25px;
+  font-weight: bold;
 }
 }
 
