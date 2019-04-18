@@ -92,9 +92,9 @@ main ul{
 .offpage:focus { 
 	position: absolute;
     left: 200px;
-    bottom: 505px;
+    bottom: 300px;
     margin: 5px;
-    color: white;
+    color: black;
 }
 .flex-container {
   padding: 5px 5px 5px 5px;
@@ -309,8 +309,8 @@ div.flex-container p{
   font-size: 36px;
   }
   .offpage:focus { 
-   left: 500px;
-   top: 5px;
+   left: 650px;
+   top: 225px;
    margin: 5px;
   }
   img.galleryitem{
@@ -376,8 +376,8 @@ div.flex-container p{
   }
   .offpage:focus { 
    left: 5px;
-   top: 300px;
-   color: white;
+   top: 250px;
+   color: black;
    font-weight: bold;
   }
   .flip-card {
